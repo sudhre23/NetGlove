@@ -49,4 +49,4 @@ The LFR model also provides ground truth for generated graphs, which we used to 
 
 Results of evaluatuon on LFR graphs with average degree equal to 20 and maximum degree equal to 50
 
-![](Performance.eps)
+![](Performance.eps?raw=true)
