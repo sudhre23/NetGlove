@@ -50,3 +50,11 @@ The LFR model also provides ground truth for generated graphs, which we used to 
 Results of evaluatuon on LFR graphs with average degree equal to 20 and maximum degree equal to 50
 
 ![alt text](https://github.com/sudhre23/NetGlove/blob/master/NMI.png)
+
+Visualization of the communities detected by NetGlove in the karate club graph
+
+![alt text](https://github.com/sudhre23/NetGlove/blob/master/karate.png)
+
+Visualization of the communities detected by NetGlove in the Les-Miserable Graph
+
+![alt text](https://github.com/sudhre23/NetGlove/blob/master/lesmis.png)
