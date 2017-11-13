@@ -34,14 +34,14 @@ python runner.py --input 'data/karate.edgelist' --output 'emb/karate.emb' --iter
 
 1. --distance-threshold: The nodes at a certain hop distance which needs to be considered for populating the node co-occurance matrix. Default value is 5, which means that only nodes at a distance of 5 units from the source graph is used for populating the co-occurance matrix row for the source node.
 
-1. --weighted or --unweighted : By default the graph is assumed to be unweighted. Specify the weighted parameter is the graph is weighted
+1. --weighted or --unweighted : By default the graph is assumed to be unweighted. Specify the weighted parameter if the graph is weighted.
 
 
 ## Results of NetGlove on LFR (Lancichinetti–Fortunato–Radicchi) graphs
 
 #### LFR Graphs
 
-The LFR model generates scale free networks and then rewires some links so that the ratio of internal to external links (as de ned with respect to community structure) changes with respect to a mixing coefficient μ. If the value of μ is greater, the proportion of external links of a node (links to outside the community) increases, leading to ill-defined community structure. For an ideal community detection method, we want the performance and accuracy to be good even for high values of μ, or show less degradation at higher values of μ. 
+The LFR model generates scale free networks and then rewires some links so that the ratio of internal to external links (as defined with respect to community structure) changes with respect to a mixing coefficient μ. If the value of μ is greater, the proportion of external links of a node (links to outside the community) increases, leading to ill-defined community structure. For an ideal community detection method, we want the performance and accuracy to be good even for high values of μ, or show less degradation at higher values of μ. 
 
 The LFR model also provides ground truth for generated graphs, which we used to evaluate the result of the clustering. Normalized mutual information between the results of the clustering and the ground truth was evaluated for different values of μ and different values of the average degree of nodes. The number of clusters for K Means was determined using the number of communities in the ground truth information. 
 
@@ -50,6 +50,8 @@ The LFR model also provides ground truth for generated graphs, which we used to 
 Results of evaluatuon on LFR graphs with average degree equal to 20 and maximum degree equal to 50
 
 ![alt text](https://github.com/sudhre23/NetGlove/blob/master/NMI.png)
+
+We can see that NetGlove (green line) outperforms the other prevalent methods at higher mixing parameters for the community detection task. 
 
 Visualization of the communities detected by NetGlove in the karate club graph
 
