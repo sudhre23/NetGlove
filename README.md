@@ -6,7 +6,7 @@ The modified loss function is given as follows:
 
 ![Equation:1](https://latex.codecogs.com/gif.latex?J%3D%5Csum_%7Bi%7D%5Csum_%7Bj%7Cd_%7Bij%7D%3Ck%7Df%5Cleft%28%5Cfrac%7B1%7D%7Bd_%7Bij%7D%7D%5Cright%29%5Cleft%28w_%7Bi%7D%5E%7BT%7Dw_%7Bj%7D-%5Cfrac%7B1%7D%7Bd_%7Bij%7D%7D%5Cright%29%5E%7B2%7D)
 
-where $d_{ij}$ corresponds to the shortest path between node i and node j in the graph. $w_{i}$ and $w_{j}$ correspond to node vectors. We solve this optimization problem using gradient descent to obtain the node representations wi and wj. We use the average of these embeddings to obtain the node vector for any node in the graph. 
+where $d_{ij}$ corresponds to the shortest path between node i and node j in the graph. wi and wj correspond to node vectors. We solve this optimization problem using gradient descent to obtain the node representations wi and wj. We use the average of these embeddings to obtain the node vector for any node in the graph. 
 
 ## Community Detection
 
