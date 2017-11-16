@@ -14,7 +14,7 @@ A simple K-Means is run on the set of node representations we have from the grap
 
 ## Code Organization
 
-runner.py is the main file to run the application. In order to use this code, thne following arguements at the very least need to be passed:
+runner.py is the main file to run the application. In order to use this code, the following arguements need to be passed:
 
 1. Input file location : The file location where the input graph (in edge list format) is stored
 
@@ -49,14 +49,14 @@ The LFR model also provides ground truth for generated graphs, which we used to 
 
 Results of evaluatuon on LFR graphs with average degree equal to 20 and maximum degree equal to 50
 
-![alt text](https://github.com/sudhre23/NetGlove/blob/master/NMI.png)
+![alt text](https://github.com/sudhre23/NetGlove/blob/master/images/NMI.png)
 
 We can see that NetGlove (green line) outperforms the other prevalent methods at higher mixing parameters for the community detection task. 
 
 Visualization of the communities detected by NetGlove in the karate club graph
 
-![alt text](https://github.com/sudhre23/NetGlove/blob/master/karate.png)
+![alt text](https://github.com/sudhre23/NetGlove/blob/master/images/karate.png)
 
 Visualization of the communities detected by NetGlove in the Les-Miserable Graph
 
-![alt text](https://github.com/sudhre23/NetGlove/blob/master/lesmis.png)
+![alt text](https://github.com/sudhre23/NetGlove/blob/master/images/lesmis.png)
